@@ -64,6 +64,20 @@ The above results are genuine,
 and demonstrate that the Haskell SPAKE2 implementation *does* work.
 Specifically, that it interoperates with python-spake2.
 
+Running Tests
+=============
+
+Running the tests requires Python 2.7.x environment. One way to do that is with virtualenv.
+
+.. code-block:: console
+
+   $ virtualenv --python=python2.7 venv
+   $ venv/bin/pip install --upgrade setuptools
+   $ venv/bin/pip install -r requirements.txt
+   $ source venv/bin/activate
+   $ stack test
+
+
 Contributing
 ============
 
